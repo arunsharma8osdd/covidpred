@@ -236,7 +236,7 @@ plt.xlabel("Number of Epoch")  ## X-axis label
 plt.ylabel("Loss/Accuracy")  ## Y-axis label
 
 ## Graph Title 
-plt.title("Combined images based model [49 epochs based]")
+plt.title("Combined images based model [101 epochs based]")
 
 ## X-axis values range
 plt.xlim(0,110)

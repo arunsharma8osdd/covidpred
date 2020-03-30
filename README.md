@@ -8,17 +8,19 @@ This repository contains:
 
 **3. Scripts used to augment the original images:** CLoDSA_augmentation_scripts.zip
 
-**4. Three CovidPred prediction models:** 
+**4. Four types of CovidPred prediction models:** train_single_24_epochs_models.py, train_combined_24_epochs_models.py, train_combined_49_epochs_models.py and train_combined_101_epochs_models.py
 
-**5. Code used for training the CovidPred prediction model (24 epochs based):** 
+**5. Code used for training the Original images or single augmentation based CovidPred prediction model (24 epochs based):** train_single_24_epochs_models.py
 
-**6. Code used for training the CovidPred prediction model (49 epochs based):** 
+**6. Code used for training the multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
 
-**7. Code used for training the CovidPred prediction model (101 epochs based):** 
+**7. Code used for training the multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
 
-**8. Code used for validation of the CovidPred prediction model (24 epochs based):** 
+**8. Code used for training the multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
 
-**9. Code used for validation of the CovidPred prediction model (49 epochs based):** 
+**9. Code used for validation of the CovidPred prediction model (24 epochs based):** 
+
+**10. Code used for validation of the CovidPred prediction model (49 epochs based):** 
 
 **10. Code used for validation of the CovidPred prediction model (101 epochs based):** 
 

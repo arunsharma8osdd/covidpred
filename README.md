@@ -4,7 +4,7 @@ This repository contains:
 
 **1. Sample training set images:** train.zip
 
-**2. Sample validation set images:** validation_set.zip
+**2. Sample validation set images:** test.zip
 
 **3. Scripts used to augment the original images:** CLoDSA_augmentation_scripts.zip
 

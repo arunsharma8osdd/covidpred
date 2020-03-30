@@ -12,11 +12,11 @@ This repository contains:
 
 **5. Code used for training the Original images or single augmentation based CovidPred prediction model (24 epochs based):** train_single_24_epochs_models.py
 
-**6. Code used for training the multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
+**6. Code used for training the original images and multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
 
-**7. Code used for training the multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
+**7. Code used for training the original images and multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
 
-**8. Code used for training the multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
+**8. Code used for training the original images and multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
 
 **9. Code used for validation of the CovidPred prediction model (24 epochs based):** 
 

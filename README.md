@@ -8,23 +8,29 @@ This repository contains:
 
 **3. Scripts used to augment the original images:** CLoDSA_augmentation_scripts.zip
 
-**4. Four types of CovidPred prediction models:** train_single_24_epochs_models.py, train_combined_24_epochs_models.py, train_combined_49_epochs_models.py and train_combined_101_epochs_models.py
+**4. Five types of CovidPred prediction models:** train_rotate_120_angle_24_epochs_model.py, train_rotate_140_angle_24_epochs_model.py, train_combined_24_epochs_models.py, train_combined_49_epochs_models.py and train_combined_101_epochs_models.py
 
-**5. Code used for training the Original images or single augmentation based CovidPred prediction model (24 epochs based):** train_single_24_epochs_models.py
+**5. Code used for training the rotated 120 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_120_angle_24_epochs_model.py
 
-**6. Code used for training the original images and multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
+**6. Code used for training the rotated 140 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_140_angle_24_epochs_model.py
 
-**7. Code used for training the original images and multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
+**7. Code used for training the original images and multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
 
-**8. Code used for training the original images and multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
+**8. Code used for training the original images and multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
 
-**9. Code used for validation of the CovidPred prediction model (24 epochs based):** 
+**9. Code used for training the original images and multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
 
-**10. Code used for validation of the CovidPred prediction model (49 epochs based):** 
+**10. Code used for testing or external validation of the CovidPred prediction model (rotated 120 degree images; 24 epochs based):** validate_rotate_120_angle_24_epochs_model.py
 
-**10. Code used for validation of the CovidPred prediction model (101 epochs based):** 
+**11. Code used for testing or external validation of the CovidPred prediction model (rotated 140 degree images; 24 epochs based):** validate_rotate_140_angle_24_epochs_model.py
 
-**11. Assisting Python code (used in models training Python scripts for datasets preparation):** dataset.py
+**12. Code used for testing or external validation of the CovidPred prediction model (Combined Model 1; 24 epochs based):** validate_combined_24_epochs_model.py
+
+**13. Code used for testing or external validation of the CovidPred prediction model (Combined Model 2; 49 epochs based):** validate_combined_49_epochs_model.py
+
+**14. Code used for testing or external validation of the CovidPred prediction model (Combined Model 3; 101 epochs based):** validate_combined_101_epochs_model.py
+
+**15. Assisting Python code (used in models training Python scripts for datasets preparation):** dataset.py
 
 
 # Frequently asked questions:
@@ -42,37 +48,53 @@ This repository contains:
 
 **Question. How to train deep learning models using above given codes?**
 
-**Answer.** The users have to store your training set images in directory named "train" as given in "train.zip" and run command as given below:
+**Answer.** The users have to store their training set images in the training dataset directory (as specified in python scripts) as given in "train.zip" and run command as given below:
 
-**I) To develop 24 epochs based model:**
+**I) To develop 120 degree rotated images (24 epochs based) model:**
 
-python train_model_24_epochs.py
+python train_rotate_120_angle_24_epochs_model.py
 
-**II) To develop 49 epochs based model:**
+**II) To develop 140 degree rotated images (24 epochs based) model:**
 
-python train_model_49_epochs.py
+python train_rotate_140_angle_24_epochs_model.py
 
-**II) To develop 101 epochs based model:**
+**III) To develop Combined Model 1 (24 epochs based):**
 
-python train_model_101_epochs.py
+python train_combined_24_epochs_models.py
 
-The above mentioned codes have all steps in common except the number of iterations and titles of training plots. These will train deep learning models and save. For each epoch, 90% data will be used in training the models and rest 10% for internal validation of trained models. Moreover, training and validation accuracy along with validation loss will be printed on terminal window. After last epoch, model will save automatically (with model's name given within the script) and a figure will also generate. The generated figure will have training and validation accuracy along with validation loss plotted on y-axis while number of epochs on x-axis. 
+**IV) To develop Combined Model 2 (49 epochs based):**
+
+python train_combined_49_epochs_models.py
+
+**V) To develop Combined Model 3 (101 epochs based):**
+
+python train_combined_101_epochs_models.py
+
+The above mentioned codes have all steps in common except the number of iterations, filters size, filters number, titles of training plots, X-axis values range, trained models names and model's performance showing plots names. These will train deep learning models and save. For each epoch, 90% data will be used in training the models and rest 10% for internal validation of trained models. Moreover, training and validation accuracy along with validation loss will be printed on terminal window. After last epoch, model will save automatically (with model's name given within the script) and a plot/figure will also generate. The generated figure will have training and validation accuracy along with validation loss plotted on y-axis while number of epochs on x-axis. 
 
 **Question. How to validate trained models on external validation dataset?**
 
-**Answer.** The user has to supply the validation set images as provided in "validation_set.zip" directory and run the following command:
+**Answer.** The user has to supply the validation set images as provided in "validation_set.zip" directory (the names of these validation dataset images directories should be as given in validation python scripts) and run the following command:
 
-**I) To validate 24 epochs based model:**
+**I) To validate 120 degree rotated images (24 epochs based) model:**
 
-python validate_model_24_epochs.py
+python validate_rotate_120_angle_24_epochs_model.py
 
-**II) To validate 49 epochs based model:**
+**II) To validate 140 degree rotated images (24 epochs based) model:**
 
-python validate_model_49_epochs.py
+python validate_rotate_140_angle_24_epochs_model.py
 
-**II) To validate 101 epochs based model:**
+**III) To validate Combined Model 1 (24 epochs based):**
 
-python validate_model_101_epochs.py
+python validate_combined_24_epochs_model.py
+
+**IV) To validate Combined Model 2 (49 epochs based):**
+
+python validate_combined_49_epochs_model.py
+
+**V) To validate Combined Model 3 (101 epochs based):**
+
+python validate_combined_101_epochs_model.py
 
 The above mentioned codes have all steps in common except that the respective prediction models to be used for validation. The output of codes will be variety-wise prediction accuracy (%) on the terminal window.
 

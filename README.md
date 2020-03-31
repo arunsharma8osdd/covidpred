@@ -38,6 +38,10 @@ This repository contains:
 
 **Note:** The training and validation set images must be supplied in unzipped format only. 
 
+**Question. Can I download the alreay trained models used in present study?**
+
+**Answer.** Yes, you can download all the five trained models from our website at: http://14.139.62.220/covid_19_models/
+
 **Question. What are the dependencies or library and operating system (OS) requirements to run these codes?**
 
 **Answer.** The library requirements are as follows:

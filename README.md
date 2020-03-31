@@ -1,5 +1,6 @@
 # CovidPred
 Classification of chest X-ray images into COVID-19 and Major Infectious Diseases
+
 This repository contains:
 
 **1. Sample training set images:** train.zip

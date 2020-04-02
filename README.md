@@ -7,31 +7,33 @@ This repository contains:
 
 **2. Sample validation set images:** test.zip
 
-**3. Scripts used to augment the original images:** CLoDSA_augmentation_scripts.zip
+**3. Full testing or external validation set images download link:** http://14.139.62.220/covid_19_models/
 
-**4. Five types of CovidPred prediction models:** train_rotate_120_angle_24_epochs_model.py, train_rotate_140_angle_24_epochs_model.py, train_combined_24_epochs_models.py, train_combined_49_epochs_models.py and train_combined_101_epochs_models.py
+**4. Scripts used to augment the original images:** CLoDSA_augmentation_scripts.zip
 
-**5. Code used for training the rotated 120 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_120_angle_24_epochs_model.py
+**5. Five types of CovidPred prediction models:** train_rotate_120_angle_24_epochs_model.py, train_rotate_140_angle_24_epochs_model.py, train_combined_24_epochs_models.py, train_combined_49_epochs_models.py and train_combined_101_epochs_models.py
 
-**6. Code used for training the rotated 140 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_140_angle_24_epochs_model.py
+**6. Code used for training the rotated 120 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_120_angle_24_epochs_model.py
 
-**7. Code used for training the original images and multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
+**7. Code used for training the rotated 140 degree images (augmentation) based CovidPred prediction model (24 epochs based):** train_rotate_140_angle_24_epochs_model.py
 
-**8. Code used for training the original images and multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
+**8. Code used for training the original images and multiple augmentation based CovidPred prediction model (24 epochs based):** train_combined_24_epochs_models.py
 
-**9. Code used for training the original images and multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
+**9. Code used for training the original images and multiple augmentation based CovidPred prediction model (49 epochs based):** train_combined_49_epochs_models.py
 
-**10. Code used for testing or external validation of the CovidPred prediction model (rotated 120 degree images; 24 epochs based):** validate_rotate_120_angle_24_epochs_model.py
+**10. Code used for training the original images and multiple augmentation based CovidPred prediction model (101 epochs based):** train_combined_101_epochs_models.py
 
-**11. Code used for testing or external validation of the CovidPred prediction model (rotated 140 degree images; 24 epochs based):** validate_rotate_140_angle_24_epochs_model.py
+**11. Code used for testing or external validation of the CovidPred prediction model (rotated 120 degree images; 24 epochs based):** validate_rotate_120_angle_24_epochs_model.py
 
-**12. Code used for testing or external validation of the CovidPred prediction model (Combined Model 1; 24 epochs based):** validate_combined_24_epochs_model.py
+**12. Code used for testing or external validation of the CovidPred prediction model (rotated 140 degree images; 24 epochs based):** validate_rotate_140_angle_24_epochs_model.py
 
-**13. Code used for testing or external validation of the CovidPred prediction model (Combined Model 2; 49 epochs based):** validate_combined_49_epochs_model.py
+**13. Code used for testing or external validation of the CovidPred prediction model (Combined Model 1; 24 epochs based):** validate_combined_24_epochs_model.py
 
-**14. Code used for testing or external validation of the CovidPred prediction model (Combined Model 3; 101 epochs based):** validate_combined_101_epochs_model.py
+**14. Code used for testing or external validation of the CovidPred prediction model (Combined Model 2; 49 epochs based):** validate_combined_49_epochs_model.py
 
-**15. Assisting Python code (used in models training Python scripts for datasets preparation):** dataset.py
+**15. Code used for testing or external validation of the CovidPred prediction model (Combined Model 3; 101 epochs based):** validate_combined_101_epochs_model.py
+
+**16. Assisting Python code (used in models training Python scripts for datasets preparation):** dataset.py
 
 
 # Frequently asked questions:

@@ -81,7 +81,7 @@ The above mentioned codes have all steps in common except the number of iteratio
 
 **Question. How to validate trained models on external validation dataset?**
 
-**Answer.** The user has to supply the validation set images as provided in "validation_set.zip" directory (the names of these validation dataset images directories should be as given in validation python scripts) and run the following command:
+**Answer.** The user has to supply the validation set images as provided in "external_validation_dataset_I" and "external_validation_dataset_II" directory (the names of these validation dataset images directories should be as given in validation python scripts) and run the following command:
 
 **I) To validate 120 degree rotated images (24 epochs based) model:**
 
@@ -103,7 +103,7 @@ python validate_combined_49_epochs_model.py
 
 python validate_combined_101_epochs_model.py
 
-The above mentioned codes have all steps in common except that the respective prediction models to be used for validation. The output of codes will be variety-wise prediction accuracy (%) on the terminal window.
+The above mentioned codes have all steps in common except that the respective prediction models to be used for validation. The output of codes will be class-wise prediction accuracy (%) on the terminal window.
 
 
 **Question. How to augment the original images?**

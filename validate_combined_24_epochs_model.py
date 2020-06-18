@@ -7,7 +7,7 @@ import cv2
 import time
 import sys
 
-## All varieties directories names
+## All classes directories names
 
 all_varities = ['Normal','covid_19','non_covid_19','Pneumonia','TB']
 
